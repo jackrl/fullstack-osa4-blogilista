@@ -23,7 +23,7 @@ const favoriteBlog = (blogs) => {
 const mostBlogs = (blogs) => {
   const authors = []
   blogs.forEach(b => {
-    const author = authors.find(a => { return a.author === b.author })
+    const author = authors.find(a => a.author === b.author )
     if (!author) {
       authors.push({
         author: b.author,
